@@ -4,7 +4,7 @@
 import '~/.config/my-scripts/rust.just'
 
 redis-server:
-    cargo run
+    cargo run --color=always
 
 redis-client-hello:
     cargo run --example hello-redis
