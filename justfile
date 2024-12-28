@@ -4,10 +4,10 @@
 import '~/.config/my-scripts/rust.just'
 
 redis-server:
-    unbuffer cargo run --color=always --bin server 2>&1 | bat -p
+    cargo run --color=always --bin server
 
 redis-client:
-    unbuffer cargo run --color=always --bin client 2>&1 | bat -p
+    cargo run --color=always --bin client
 
 redis-client-hello:
     cargo run --example hello-redis
